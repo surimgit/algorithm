@@ -4,7 +4,7 @@ import java.security.DrbgParameters.NextBytes;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Ex0101 {
+public class prob1 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		

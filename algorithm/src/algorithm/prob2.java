@@ -3,7 +3,7 @@ package algorithm;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Ex0102 {
+public class prob2 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -21,17 +21,17 @@ public class Ex0102 {
 	}
 
 	public static int Nearest(int[] arr, int K, int left, int right) {
-        if (left > right) {
+        if(left > right) {
             return arr[right];
         }
         
         int mid = left + (right - left) / 2;
 
         int nearest = arr[mid];
-        if (mid - 1 >= left && Math.abs(arr[mid] - K) > Math.abs(Nearest(arr, K, left, mid - 1) - K)) {
+        if(mid - 1 >= left && Math.abs(arr[mid] - K) > Math.abs(Nearest(arr, K, left, mid - 1) - K)) {
             nearest = Nearest(arr, K, left, mid - 1);
         }
-        if (mid + 1 <= right && Math.abs(arr[mid] - K) > Math.abs(Nearest(arr, K, mid + 1, right) - K)) {
+        if(mid + 1 <= right && Math.abs(arr[mid] - K) > Math.abs(Nearest(arr, K, mid + 1, right) - K)) {
             nearest = Nearest(arr, K, mid + 1, right);
         }
 
