@@ -1,4 +1,4 @@
-package algorithm;
+package first;
 
 import java.security.DrbgParameters.NextBytes;
 import java.util.Scanner;
